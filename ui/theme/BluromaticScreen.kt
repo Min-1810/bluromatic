@@ -93,7 +93,8 @@ fun BluromaticScreenContent(
             contentDescription = stringResource(R.string.description_image),
             modifier = Modifier
                 .fillMaxWidth()
-                .height(400.dp),
+                .height(400.dp)
+                .blur(selectedValue.dp),
             contentScale = ContentScale.Fit,
         )
         BlurAmountContent(
